@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Examen :: Institut</title>
+
+		<!-- CSS de Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+		<!-- Css de l'examen -->
+		<link rel="stylesheet" href="examen.css"/>
+		<!-- CSS propi -->
+		<!--link rel="stylesheet" href="css/estils.css"/>
+		<link rel="stylesheet" href="css/estilsinici.css"/-->
+		<!-- llibreries opcionals que activen el suport d'HTML5 per a IE8 -->
+		<!--[if lt IE 9]>
+		<script
+		src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script
+		src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Llibreria jQuery requerida pels plugins de JavaScript -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!--script src="js/jquery.js"></script-->
+		<!-- Tots els plugins JavaScript de Bootstrap (també es poden incloure
+		arxius JavaScript individuals dels únics plugins que s'utilitzen) -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Scripts càrrega de tooltip -->
+		<script type="text/javascript">
+		$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();
+		});
+		</script>
+		<!-- Codi necessari per incloure plugin popover -->
+		<script type="text/javascript">
+			$(function () {
+			  $('[data-toggle="popover"]').popover()
+			})
+		</script>
+	</head>
+	<body>
+		<div id="wrapper" class="container-fluid">
+		
+			<div class="row">				
+				<nav id="barrafixa" class="navbar navbar-default navbar-justified col-xs-12 navbar-fixed-top text-center">
+					<!-- El logotipus i la icona que desplega el menú s'agrupen per a mostrar-los millor en els dispositius mòbils -->
+					<div class="navbar-header text-center ">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#examen-fixed-navbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand visible-xs" href="#">
+							Examen
+						</a>
+					</div>
+					<!-- Agrupar els enllaços de navegació, els formularis i qualsevol altre element que es puga ocultar al minimitzar la barra -->
+					<div class="collapse navbar-collapse text-center" id="examen-fixed-navbar">
+						<ul class="nav navbar-nav barrafixa">
+							<li id="allmusic" class="navbar-left container-fluid">
+								<a href="http://portal.benidorm.org/" tabindex="0" role="button" data-html="true" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Enllaç a..." data-content="<h4>Benidorm</h4><hr/><img src=imgexamen/benidorm.jpg alt=Benidorm />">
+									<img src="./imgexamen/logo_benidorm.png" alt="Benidorm logo" class="benidorm_logo"/>
+								</a>
+							</li>
+							<li class="navbar-right container-fluid">
+								<span id="iesperemaria" class="navbar-text"   tabindex="0" role="button" data-html="true" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Enllaç a..." data-content="<h4>IES Pere Maria Orts</h4>">
+									<a href="http://iesperemaria.edu.gva.es/iesperemaria/"><span class="titolgroc">
+										<img src="./imgexamen/logo_ies.png" alt="IES Pere Maria Orts logo" class="ieslogo_top"/>
+									</a>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div> <!--final de la fila de la barra de navegació fixa superior -->
+
+				<div class="row">				
+					<header id="cap" class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+						<a href="#">
+							<img src="./imgexamen/cap.png" alt="Imatge de capçalera" class="imatgecap img-responsive"/>
+						</a>
+					</header>
+				</div> <!--Final de la capçalera-->
+
+				<div class="row">				
+					<nav id="navegacio" class="navbar navbar-inverse col-xs-12 col-md-8 col-md-offset-2">
+						<!-- El logotipus i la icona que desplega el menú s'agrupen per a mostrar-los millor en els dispositius mòbils -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#examen-navbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand visible-xs" href="#">
+								Menú Examen
+							</a>
+						</div>
+						<!-- Agrupar els enllaços de navegació, els formularis i qualsevol altre element que es puga ocultar al minimitzar la barra -->
+						<div class="collapse navbar-collapse text-center" id="examen-navbar">
+							<ul class="nav nav-justified">
+								<!--li class="active"><a href="#"><span class="glyphicon glyphicon-home icon-align"></span> Inici</a></li-->
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<span class="glyphicon glyphicon-headphones icon-align"></span> Inici <b class="caret"></b>
+									</a>
+									<ul  class="dropdown-menu desplegable">
+										<li><a href="index.html">Principal</a></li>
+										<li class="active"><a href="#">Examen</a></li>
+									</ul>
+								</li>
+								<li><a href="./html/discografia.html"><span class="glyphicon glyphicon-cd icon-align"></span> Discografia</a></li>
+								<li><a href="./html/banda.html"><span class="glyphicon glyphicon-info-sign icon-align"></span> Banda</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<span class="glyphicon glyphicon-headphones icon-align"></span> Media <b class="caret"></b>
+									</a>
+									<ul  class="dropdown-menu desplegable">
+										<li><a href="./html/media.html">Multimedia</a></li>
+										<li><a href="./html/galeria.html">Galeria</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<span class="glyphicon glyphicon-envelope icon-align"></span> Contacte <b class="caret"></b>
+									</a>
+									<ul  class="dropdown-menu desplegable">
+										<li><a href="./html/contacte.html">Contacte</a></li>
+										<li><a href="./html/valoracio.html">Valoració</a></li>
+										<li><a href="./html/ubicacio.html">Ubicació</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div><!--final de la barra de navegació-->
+
+				<div class="row">
+					<aside id="esquerra" class="hidden-xs hidden-sm col-xs-3 col-md-4 col-md-offset-1">
+						<div class="alert alert-warning">
+							<a href="#" class="close" data-dismiss="alert">&times;</a>
+							<strong>Carousel</strong> Imatges de l'IES Pere Maria Orts
+						</div>
+						<!-- inici carousel-->
+						<div class="mediacarousel text-center">
+						<div id="carouselExamen" class="carousel slide" data-interval="2000" data-ride="carousel">
+
+							<!-- Cercles en blanc que indiquen en quina diapositiva estem-->
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExamen" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExamen" data-slide-to="1"></li>
+								<li data-target="#carouselExamen" data-slide-to="2"></li>
+								<li data-target="#carouselExamen" data-slide-to="3"></li>
+								<li data-target="#carouselExamen" data-slide-to="4"></li>
+							</ol>
+
+							<!-- Diapositives -->
+							<div class="carousel-inner carousel-mida text-center">
+								<div class="active item">
+									<img src="./imgexamen/ies/ies01.jpg" alt="IES Pere Maria Orts 01" class="imatgecarousel img-responsive"/>
+									<div class="carousel-caption">
+										<h4>IES Pere Maria Orts <span class="badge">1</span></h4>
+									</div>
+								</div>
+								<div class="item">
+									<img src="./imgexamen/ies/ies02.jpg" alt="IES Pere Maria Orts 02" class="imatgecarousel img-responsive"/>
+									<div class="carousel-caption">
+										<h4>IES Pere Maria Orts <span class="badge">2</span></h4>
+									</div>
+								</div>
+								<div class="item">
+									<img src="./imgexamen/ies/ies03.jpg" alt="IES Pere Maria Orts 03" class="imatgecarousel img-responsive"/>
+									<div class="carousel-caption">
+										<h4>IES Pere Maria Orts <span class="badge">3</span></h4>
+									</div>
+								</div>
+								<div class="active item">
+									<img src="./imgexamen/ies/ies04.jpg" alt="IES Pere Maria Orts 04" class="imatgecarousel img-responsive"/>
+									<div class="carousel-caption">
+										<h4>IES Pere Maria Orts <span class="badge">4</span></h4>
+									</div>
+								</div>
+								<div class="item">
+									<img src="./imgexamen/ies/ies05.jpg" alt="IES Pere Maria Orts 05" class="imatgecarousel img-responsive"/>
+									<div class="carousel-caption">
+										<h4>IES Pere Maria Orts <span class="badge">5</span></h4>
+									</div>
+								</div>
+							</div>
+
+							<!-- Carousel nav -->
+							<a class="carousel-control left" href="#carouselExamen" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="carousel-control right" href="#carouselExamen" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						</div>
+					</div>
+						<!--final carousel-->
+					</aside>
+					
+					<section id="contingut" class="col-xs-9 col-md-4 text-center">
+						<div class="alert alert-info">
+							<a href="#" class="close" data-dismiss="alert">&times;</a>
+							<strong>DAW</strong> Disseny D'interfícies web Curs 2015/2016
+						</div>
+						
+						<div class="jumbotron">
+							<h1 class="">Estudis</h1>
+						<figure class="imatgeprincipal ">
+							<img src="./imgexamen/iesperemaria.jpg" alt="IES Pere Maria Orts" class="img-responsive portada" />
+							<figcaption>
+								IES Pere Maria Orts i Bosch
+							</figcaption>
+						</figure>
+						</div>
+						
+						<div class="text-center"> <!--primer collapse :: ESO -->
+							<div class="panel panel-success">
+								<div class="panel-heading" data-toggle="collapse">								
+										<a class="btn btn-success" data-toggle="collapse" href="#collapseESO">
+										Educació Secundària Obligatòria (ESO)
+										</a>
+								</div>
+								<div class="panel-collapse collapse" id="collapseESO">
+									<div class="panel-body">
+										Educació Secundària Obligatòria																
+									</div>
+								</div>
+							</div>
+						</div><!-- final primer collapse :: ESO -->
+
+						<div class="text-center"> <!--segon collapse :: Batx -->
+							<div class="panel panel-warning">
+								<div class="panel-heading" data-toggle="collapse">								
+										<a class="btn btn-warning" data-toggle="collapse" href="#collapseBatx">
+										Batxillerat
+										</a>
+								</div>
+								<div class="panel-collapse collapse" id="collapseBatx">
+									<div class="panel-body">
+										<ul class="list-group"> <!--llista batxillerats -->
+											<li class="list-group-item">Batxillerat de ciències i tecnologia</li>
+											<li class="list-group-item">Batxillerat d'humanitats i ciències socials</li>
+											<li class="list-group-item">Batxillerat d'arts plàstiques, imatge i disseny</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- final segon collapse :: Batx -->
+						
+						
+						<div class="text-center"> <!--tercer panel no collapse :: Cicles Formatius -->
+							<div class="panel panel-danger">
+								<div class="panel-heading"> <!-- Contenidor Finestra Modal :: Cicles Formatius -->
+								
+									<!-- Botó que obre la finestra modal -->
+									<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#FinestraModalCicles">
+										Cicles Formatius
+									</button>
+									
+									<!-- Finestra modal-->
+									<div class="modal fade" id="FinestraModalCicles" role="dialog" >
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+													<h4 class="modal-title" id="myModalLabel">Cicles Formatius: IES Pere Maria Orts</h4>
+												</div>
+												<div class="modal-body">
+													<ul class="list-group"> <!--llista cicles formatius -->
+														<li class="list-group-item">Sistemes Microinformàtics i Xarxes</li>
+														<li class="list-group-item">Desenvolupament d'Aplicacions Web</li>
+														<li class="list-group-item">Desenvolupament d'Aplicacions Multiplataforma</li>
+														<li class="list-group-item">Administració i Finances</li>
+														<li class="list-group-item">Publicitat i Màrqueting</li>
+													</ul>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-danger" data-dismiss="modal">Tancar</button>
+												</div>
+											</div>
+										</div>
+									</div> <!-- Final deFinestra Modal  -->		
+								
+								</div> <!-- Final de Contenidor de Finestra Modal :: Cicles Formatius -->
+							</div>
+						</div><!--Final tercer panel no collapse :: Cicles Formatius -->
+						
+					</section>
+					
+					<aside id="dreta" class="col-xs-3 col-md-2">
+						<div id="login"> <!-- caixa del formulari -->
+							<form  class="form-horizontal" method="post" action="processalogin.php">
+								<div class="form-group form-group-sm has-success">
+									<label for="usuari" class="control-label">Usuari:</label>
+									<div class="input-group">
+										<div class="input-group-addon">@</div>									
+										<input type="text" class="form-control" id="usuari" name="usuari" />										
+									</div>
+								</div>
+								<div class="form-group form-group-sm">
+									<label for="contrasenya"class="control-label has-feedback" >Contrasenya:</label>
+									<div class="input-group">
+										<div class="input-group-addon"><span class="glyphicon glyphicon-hand-right"></span></div>
+										<input type="password" class="form-control" id="contrasenya" name="contrasenya"/>
+										<span class="glyphicon glyphicon-link form-control-feedback"></span>										
+									</div>
+								</div>
+								<div class="form-group form-group-sm">
+									<button type="submit" class="btn btn-default">Login <span class="glyphicon glyphicon-user"></span></button>	
+								</div>
+							</form>
+						</div> <!-- final caixa del formulari -->
+						
+						<div>
+							<a href="http://www.gva.es" data-toggle="tooltip" data-placement="top" data-original-title="GVA">
+								<figure class="imatgeDreta">
+									<img src="./imgexamen/gva.png" alt="GVA" class="img-responsive" />
+								</figure>
+							</a>
+						</div>
+						<div>
+							<a href="http://sites.iesperemaria.com/comenius/" data-toggle="tooltip" data-placement="left" data-original-title="Erasmus"">
+								<figure class="imatgeDreta">
+									<img src="./imgexamen/erasmus.jpg" alt="Erasmus+" class="img-responsive" />
+								</figure>
+							</a>
+						</div>
+						<div>
+							<a href="http://iesperemaria.edu.gva.es/borsa/"  data-toggle="tooltip" data-placement="left" data-original-title="Borsa de Treball"">
+								<figure class="imatgeDreta">
+									<img src="./imgexamen/borsatreball.jpg" alt="Borsa de treball+" class="img-responsive" />
+								</figure>
+							</a>
+						</div>
+						<div>
+							<a href="https://fct.edu.gva.es/"  data-toggle="tooltip" data-placement="left" data-original-title="SAÓ"">
+								<figure class="imatgeDreta">
+									<img src="./imgexamen/sao.png" alt="Saó" class="img-responsive" />
+								</figure>
+							</a>
+						</div>
+						<div>
+							<a href="http://ec.europa.eu/regional_policy/es/funding/erdf/"  data-toggle="tooltip" data-placement="bottom" data-original-title="FEDER">
+								<figure class="imatgeDreta">
+									<img src="./imgexamen/feder.jpg" alt="Feder" class="img-responsive" />
+								</figure>
+							</a>
+						</div>
+					<aside>
+				</div><!-- Final de contingut -->
+
+				<div class="row">				
+					<footer id="peu" class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+							<div id="textpeu">					
+								<h3>DAW :: Disseny d'Interfícies Web</h3>			
+								<h4>IES Pere Maria Orts :: Curs 2015/16</h4>
+								<h5 class="well text-info">
+									Benidorm: Carrer Barca del Bou, S/N, CP 03503
+								</h5>							
+							</div>						
+					</footer>
+				</div>
+			</div>
+		</div> <!-- wrapper-->
+	</body>
+</html>

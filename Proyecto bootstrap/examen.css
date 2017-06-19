@@ -1,0 +1,254 @@
+/************** reset ********************/
+*{
+	padding:0px;
+	margin:0px;
+}
+
+/************** espai per a la barra fixa ********************/
+
+body{
+	padding-top:90px;
+	animation: colorFons 3000ms ease-in infinite alternate 0s backwards;
+}
+/**************  barra fixa ********************/
+
+#examen-fixed-navbar{
+}
+.barrafixa{
+	width:100%;
+}
+/************** capçalera ********************/
+
+#cap{
+	
+	border:solid 1px black;
+}
+.imatgecap{
+	margin-left:auto;
+	margin-right:auto;
+}
+/************** navegació ********************/
+
+#navegacio{
+	
+	border:solid 1px black;
+}
+/************** contingut ********************/
+
+#dreta,#esquerra,#contingut{
+	
+	border:solid 1px black;
+}
+
+.portada{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.imatgeprincipal{
+	margin-bottom:20px;
+}
+
+/************** dreta ********************/
+
+#login{
+	
+	margin:20px;
+
+}
+/************** peu ********************/
+
+#peu{
+		border:solid 1px black;
+		margin-top:20px;
+	
+}
+
+
+/******** estils per al carousel **********/
+
+item{
+background-color:#F00;
+text-align: center;
+height: 200px !important;
+}
+.carousel{
+margin-top: 20px;
+border:solid 1px gray;
+text-align:center;
+vertical-align:middle;
+
+}
+.mediacarousel{
+	margin: 20px;
+	text-align:center;
+	/*border:solid 2px blue;*/
+}
+.imatgecarousel{
+	max-height:200px;
+	margin-left:auto;
+	margin-right:auto;
+	vertical-align:middle;
+	/*border:solid 1px red;*/
+}
+.carousel-caption{
+	background-color:transparent;
+}
+.carousel-mida{
+/*no ficar width ací*/
+	height:200px;
+	text-align:center;
+}
+#contenidor{
+	width:300px;
+	margin:20px auto 20px auto;
+	text-align:center;
+}
+#carouselExamen h4{
+	background-color:#FFF;
+	border:solid 1px black;
+	border-radius:10px;
+	padding:3px;
+	color:black;
+}
+
+
+/********************************************/
+/**************** Recuperació ***************/
+/********************************************/
+
+
+/******************************/
+/*   		  font  		   */
+/******************************/
+
+@font-face {
+  font-family: 'blowbrush';
+  src: url('../fontsexamen/blowbrush.otf');
+}
+
+/* canvas */
+#exerciciCanvas{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+/* estils css3 exercici 3*/
+
+.augmentaimatge{
+	/*transició de l'augment de mida de la imatge*/
+	transition:transform 2s ease-out;
+	-moz-transition:-moz-transform 2s ease-out;
+	-webkit-transition:-webkit-transform 2s ease-out;
+	-ms-transition:-ms-transform 2s ease-out;
+	-o-transition:-o-transform 2s ease-out;
+}
+
+.augmentaimatge:hover{
+	transform: scale(1.5);
+	-moz-transform:scale(1.5);
+	-webkit-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+	-o-transform:scale(1.5);
+}
+
+#dreta img{
+	margin-bottom:10px;
+	box-shadow: red 0px 0px 0px;
+	-moz-box-shadow: red 0px 0px 0px;
+	-webkit-box-shadow: red 0px 0px 0px;
+	-ms-box-shadow: red 0px 0px 0px;
+	-o-box-shadow: red 0px 0px 0px;
+	/*transició de l'ombra de l'input amb focus */
+	transition:box-shadow 1s ease-out;
+	-moz-transition:-moz-box-shadow 1s ease-out;
+	-webkit-transition:-webkit-box-shadow 1s ease-out;
+	-ms-transition:-ms-box-shadow 1s ease-out;
+	-o-transition:-o-box-shadow 1s ease-out;
+}
+
+#dreta img:hover{
+	box-shadow: red 6px 6px 6px;
+	-moz-box-shadow: red 6px 6px 6px;
+	-webkit-box-shadow: red 6px 6px 6px;
+	-ms-box-shadow: red 6px 6px 6px;
+	-o-box-shadow: red 6px 6px 6px;
+}
+
+@keyframes colorFons{
+	0%{
+		background-color: #ccffb3;
+	}
+	100%{
+		background-color: #ffffcc;
+	}
+}
+
+
+/***************************/
+/*** Estils Exercici 4 *****/
+/***************************/
+
+#exercici4_examen{
+	margin-top:10px;
+	border: solid 1px black;
+}
+#exercici4_examen h3{
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	border: solid 1px black;
+	padding:5px;
+	background-color:#CCCC66;
+	color:red;
+
+}
+#exercici4_examen ul{
+
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url('../imgexamenrecu/fonsllista.gif');
+	padding:25px;
+}
+#exercici4_examen ul li{
+	text-align:justify;
+	list-style-type:circle;
+	list-style-position:inside;
+	padding:5px;
+	margin:5px;
+	border:2px solid black;
+	background-color:#660000;
+	color:#FFCC00;
+	border-radius:10px;
+	line-height:28px;
+}
+
+#exercici4_examen ul li:nth-child(even){
+	background-color:#DD3;
+	color:#D0D;
+}
+#exercici4_examen ul li:nth-child(odd){
+	background-color:#D0D;
+	color:#DD3;
+}
+#exercici4_examen ul li:nth-child(2){
+	text-decoration:underline;
+}
+#exercici4_examen ul li:nth-child(3){
+	text-decoration:underline;
+}
+#exercici4_examen ul li:last-child{
+	background-color:#777;
+	color:#FFF;
+}
+#exercici4_examen ul li:nth-child(odd):first-letter{
+	font-size:20px;
+	color:#0000FF;
+}
+#exercici4_examen ul li:not(:last-child):hover{
+	background-color:#CCC;
+	color:#FF0;
+}
+
+
